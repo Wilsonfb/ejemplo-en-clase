@@ -1,1 +1,1 @@
-# ejemplo-en-clase
+Talleres de clase:
