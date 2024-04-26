@@ -8,5 +8,5 @@ class Estudiante:
 nombre=input("Digite su nombre: ")
 edad=input("Digite su edad: ")
 curso=input("Digite su curso: ")
-niño=Estudiante(nombre, edad, curso)
+Estudiante=(nombre, edad, curso)
 print(f"Su nombre es {nombre} tiene {edad} años y esta en {curso}.")
