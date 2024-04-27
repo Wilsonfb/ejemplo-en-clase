@@ -1,3 +1,6 @@
+#Crear un objeto "Estudiante" con atributos nombre, edad,
+#calificaciones y métodos para calcular el promedio, determinar
+#si aprobó el curso y obtener la calificación más alta.  
 class Estudiante:
     def init(self, nombre, edad, nota):
         self.nombre=nombre
