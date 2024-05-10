@@ -1,20 +1,25 @@
 class Estudiante:
-    def init(self, nombre, edad, grado):
+    def __init__(self, nombre, edad, grado, nota1, nota2):
         self.nombre = nombre
         self.edad = edad
         self.grado = grado
+        self.nota1 = nota1
+        self.nota2 = nota2
     def saludar(self):
-        print(f"Su nombre es {self.nombre} tiene {self.edad} años y esta en {self.grado}.")
-    def suma(valor1, valor2):
-        valor1 = 10
-        valor2 = 20
-        suma = valor1 + valor2
-        print(f"La suma es {suma}.")
-#nombre = input("Digite su nombre: ")
-#edad = input("Digite su edad: ")
-#grado = input("Digite su grado: ")
-#obejto1 = Estudiante(nombre, edad, grado)
-obejto1 = Estudiante(nombre= "nixson", edad =18, grado=11)
-#print(f"Su nombre {obejto1.nombre} esta en {obejto1.grado} y tiene {obejto1.edad} años.")
-obejto1.saludar()
-obejto1.suma()
+        print(f"Hola mucho gusto {self.nombre} que tiene {self.edad} y esta en {self.grado}.")
+    def suma_notas(self):
+        suma = self.nota1 + self.nota2
+        promedio = suma / 2
+        print(f"La suma de las notas es {suma}.")
+        print(f"Y el promedio es {promedio}")
+nombre = input("Digite su nombre: ")
+edad = int(input("Digite su edad: "))
+grado = input("Digite su grado: ")
+nota1 = int(input("Digite la primera nota: "))
+nota2 = int(input("Digite la segunda nota: "))
+estudiante1 = Estudiante(nombre, edad, grado, nota1, nota2)
+estudiante2 = Estudiante("Nixson", 33, "once", 40, 30)
+estudiante1.saludar()
+estudiante1.suma_notas()
+estudiante2.saludar()
+estudiante2.suma_notas()
