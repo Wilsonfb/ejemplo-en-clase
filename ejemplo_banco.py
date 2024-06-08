@@ -14,10 +14,8 @@ class CuentaBancaria:
         return False
     def consultar_saldo(self):
         return self.__saldo
-#    def get_ceunta(self):
-#        return self.__numero_cuenta
-#    def set_cuenta(self, nuevo_numero_cuenta):
-#        self.__numero_cuenta = nuevo_numero_cuenta
+    def obtener_numero_cuenta(self):
+        return self.__numero_cuenta
 class Cliente:
     def __init__(self, nombre):
         self.__nombre = nombre
@@ -50,5 +48,5 @@ cuenta1.depositar(500)
 print(f"Saldo total de {cliente.get_nombre()} después de depositar en la cuenta 1: {cliente.consultar_saldo_total()}.")
 cuenta2.retirar(1000)
 print(f"Saldo total de {cliente.get_nombre()} de retirar de la cuenta 2: {cliente.consultar_saldo_total()}.")
-#cuenta1.eliminar_cuenta("123456789")
+cliente.eliminar_cuenta("123456789")
 print(f"Saldo total de {cliente.get_nombre()} después de eliminar la cuenta 1: {cliente.consultar_saldo_total()}.")
